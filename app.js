@@ -55,7 +55,7 @@ function request(str){
 		var total = pages*perpage;
 		// alert(perpage);
 		var randomvalue = Math.floor(Math.random() * 200);
-		alert(randomvalue);
+		// alert(randomvalue);
 
 		var index = randomvalue;
 
