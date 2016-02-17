@@ -49,7 +49,16 @@ function request(str){
 	// alert(str);
 	$.get(str).done(function(data){
 		// alert(data.photos.photo[0].id);
-		var index = 180;
+
+		var pages = data.photos.pages;
+		var perpage = data.photos.perpage;
+		var total = pages*perpage;
+		// alert(perpage);
+		var randomvalue = Math.floor(Math.random() * 200);
+		alert(randomvalue);
+
+		var index = randomvalue;
+
 		var photoid = data.photos.photo[index].id;
 		var farmid = data.photos.photo[index].farm;
 		var server = data.photos.photo[index].server;
