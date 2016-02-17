@@ -7,12 +7,12 @@
 	<script type = "text/javascript" src="app.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
-
+	<title> test</title>
 </head>
-
+<body onload = "makerequest()">
 	<div id="container" class = "container">
-		<body>
-			<p id = "p1"> </p>
+
+		<p id = "p1"> </p>
 		<h3 style="color:#007ee5;	margin-left:10px;">Random Act of Flick</h3><h3 style="color:#ff0084">r</h3>
 		<div id = "dataformcontainer" class = "dataformcontainer">
 			<form name="dataform" action="" method="get" accept-charset="utf-8">
@@ -25,6 +25,9 @@
 						<!-- <input type="submit" class="btn btn-primary" value = "Make Request" id = "subm"> -->
 
 						<button type="button" class= "btn btn-primary" id = "sum" onclick="makerequest()">Make Request</button>
+					</li>
+					<li>
+						<p id = "loader"></p>
 					</li>
 
 
