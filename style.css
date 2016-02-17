@@ -1,0 +1,52 @@
+	html {
+		height:100%;
+		height:100%;
+		margin:0;
+	}
+	#container {
+		height:100%;
+		width:100%;
+		margin:0;
+		background-color:#ccc;
+		/*background: rgba(0,0,0, .5);*/
+		transition-property: background;
+    transition-duration: 1000ms;
+    transition-timing-function: ease-in;
+    transition-delay: 200ms;
+	}
+	input{
+		border-radius:4px;
+	}
+	input:required {
+		border: 1px dashed #ff0084;
+	}
+
+	.dataformcontainer{
+		padding-top:30%;
+		margin-left:auto;
+		margin-right:auto;
+		width:40%;
+		text-align:center;
+	}
+
+	.dataformcontainer ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.dataformcontainer li {
+		margin:20px;
+		display: block;
+		margin:10px;
+	}
+	label {
+		display: inline;
+		color: #eee;
+	}
+	h3{
+		float: left;
+		margin:0px;
+		margin-top:10px;
+	}
+
+}

@@ -1,0 +1,37 @@
+
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+	<script type = "text/javascript" src="app.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+	<div id="container" class = "container">
+		<body>
+			<p id = "p1"> </p>
+		<h3 style="color:#007ee5;	margin-left:10px;">Random Act of Flick</h3><h3 style="color:#ff0084">r</h3>
+		<div id = "dataformcontainer" class = "dataformcontainer">
+			<form name="dataform" action="" method="get" accept-charset="utf-8">
+				<ul>
+					<li>
+						<label id = "test" for="account">Flickr Name</label>
+						<input type="user" name="username" id = "username" placeholder="BestOfRallyLive" id = "username" required>
+					</li>
+					<li>
+						<!-- <input type="submit" class="btn btn-primary" value = "Make Request" id = "subm"> -->
+
+						<button type="button" class= "btn btn-primary" id = "sum" onclick="makerequest()">Make Request</button>
+					</li>
+
+
+				</ul>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
