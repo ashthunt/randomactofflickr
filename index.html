@@ -7,41 +7,41 @@
 	<script type = "text/javascript" src="app.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title> test</title>
+	<title> randomactofflickr</title>
 </head>
 <body onload = "makerequest()">
 
 
 	<div id = "wallpaper" class = "wallpaper"></div>
-	<div id="container" class = "container">
+	<div id="container" class = "container">lo
 
 
 		<h3 style="color:#007ee5;	margin-left:10px;">Random Act of Flick</h3><h3 style="color:#ff0084">r</h3>
 		<div id = "dataformcontainer" class = "dataformcontainer">
-			<form name="dataform" onsubmit="makerequest()" method="get" accept-charset="utf-8">
+			<form name="dataform" action="" accept-charset="utf-8">
 				<ul>
 					<li>
-						<label id = "test" for="account">Flickr Name</label>
-						<input type="user" name="username" id = "username" placeholder="BestOfRallyLive" id = "username" required>
+						<label for="account">Flickr Name</label>
+						<input type="text" name="username" id = "username" placeholder="BestOfRallyLive" required>
 					</li>
 					<li>
 						<!-- <input type="submit" class="btn btn-primary" value = "Make Request" id = "subm"> -->
 
-						<button type="button" class= "btn btn-primary" id = "sum">Make Request</button>
+						<button type="button" class= "btn btn-primary" id = "sum" onclick="makerequest()">Make Request</button>
 					</li>
-					<li>
-						<div id = "spinner" class="spinner">
-							  <!-- $('#checkin-form').html("<div id='message'></div><div id='badges'></div>");  -->
 
-							<!-- <div class="bounce1"></div>
-							<div class="bounce2"></div>
-							<div class="bounce3"></div> -->
-						</div>
-					</li>
 
 
 				</ul>
+
 			</form>
+			<div id = "spinner" class="spinner">
+					<!-- $('#checkin-form').html("<div id='message'></div><div id='badges'></div>");  -->
+
+				<!-- <div class="bounce1"></div>
+				<div class="bounce2"></div>
+				<div class="bounce3"></div> -->
+			</div>
 		</div>
 
 
