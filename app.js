@@ -1,5 +1,9 @@
 //app.js
-
+// Marsel Van Oosten
+// _rebekka
+// olivia bee
+// rosiehardy
+// FataliGallery
 function setbg(size, photoid, farmid, server, secret){
 
 	var img =
