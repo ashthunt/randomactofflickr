@@ -7,8 +7,9 @@ function setbg(size, photoid, farmid, server, secret){
 
 	document.getElementById('loader').src = "";
 
-	$("#container").css('background-size', 'cover');
-	$("#container").css('background-image', 'url('+img+')');
+	$("#wallpaper").css('background-size', 'cover');
+	$("#wallpaper").css('background-image', 'url('+img+')');
+	$("#wallpaper").css('transition', 'background 200ms ease-in 3s');
 }
 function startLoader(){
 	var count = 0;
@@ -35,8 +36,8 @@ function makerequest(){
 	$.get("https://api.flickr.com/services/rest/?method=flickr.people.findByUsername&api_key=6c831824ff9e6778397aa5d3b9ad6cda&format=json&username="+userinput+"&nojsoncallback=1").done(function(response){
 		// $("#container").css('background-image', 'url('+$loaderurl+')');
 
-		$("#container").css('background-color', 'white');
-		$("#container").css('transition', 'background 200ms ease-in 3s');
+		$("#wallpaper").css('background-color', 'white');
+		$("#wallpaper").css('transition', 'background 200ms ease-in 3s');
 
 		buildstring(response.user.nsid);
 	});

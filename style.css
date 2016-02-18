@@ -4,15 +4,29 @@
 		margin:0;
 	}
 	#container {
+		z-index:1;
 		height:100%;
 		width:100%;
 		margin:0;
-		background-color:#ccc;
+		position:absolute;
+		background-color:rgba(0,0,0,.5);
+
+
 		/*background: rgba(0,0,0, .5);*/
-		transition-property: background;
-    transition-duration: 1000ms;
-    transition-timing-function: ease-in;
-    transition-delay: 200ms;
+
+	}
+	#wallpaper {
+		position:absolute;
+		z-index:-1;
+		height:100%;
+		width:100%;
+		margin:0px;
+		-webkit-filter: blur(2px);
+		-moz-filter: blur(2px);
+		-o-filter: blur(2px);
+		-ms-filter: blur(2px);
+		filter: blur(2px);
+		/*background-color:rgba(255,0,0,.5);*/
 	}
 	input{
 		border-radius:4px;
@@ -38,6 +52,9 @@
 		margin:20px;
 		display: block;
 		margin:10px;
+	}
+	.dataform{
+		font-size:30px;
 	}
 	label {
 		display: inline;
