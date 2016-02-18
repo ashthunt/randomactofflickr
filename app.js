@@ -5,40 +5,25 @@ function setbg(size, photoid, farmid, server, secret){
 	var img =
 	'https://farm'+farmid+'.static.flickr.com/'+server+'/'+photoid+'_'+secret+'_'+size+'.jpg';
 
-	document.getElementById('loader').src = "";
-
+	// document.getElementById('loader').src = "";
+$("#spinner").html("");
 	$("#wallpaper").css('background-size', 'cover');
 	$("#wallpaper").css('background-image', 'url('+img+')');
-	$("#wallpaper").css('transition', 'background 200ms ease-in 3s');
 }
-function startLoader(){
-	var count = 0;
-	setInterval(function(){
-		count++;
-		var periods = new Array(count % 10).join('.');
-		document.getElementById('loader').innerHTML =  periods;
-	}, 200);
-}
-function resetLoader(){
-	document.getElementById('loader').innerHTML =  null;
-}
-function makerequest(){
 
+function makerequest(){
+$("#spinner").html("<div class=\"bounce1\"></div><div class=\"bounce2\"></div><div class=\"bounce3\"></div>");
 	var userinput = document.getElementById('username').value;
 	// alert(userinput);
 	if(userinput == ""){
 		userinput = "BestOfRallyLive";
 	}
-	// loaderurl = 'ajax-loader.gif';
-	// document.getElementById('loader').src = loaderurl;
-	startLoader();
 
 	$.get("https://api.flickr.com/services/rest/?method=flickr.people.findByUsername&api_key=6c831824ff9e6778397aa5d3b9ad6cda&format=json&username="+userinput+"&nojsoncallback=1").done(function(response){
-		// $("#container").css('background-image', 'url('+$loaderurl+')');
-		//
-		// $("#wallpaper").css('background-color', 'white');
-		// $("#wallpaper").css('transition', 'background 200ms ease-in 3s');
+		// $("#container").css('background-color', 'white');
+
 		buildstring(response.user.nsid);
+
 	});
 }
 
