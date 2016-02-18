@@ -17,7 +17,7 @@ function startLoader(){
 		count++;
 		var periods = new Array(count % 10).join('.');
 		document.getElementById('loader').innerHTML =  periods;
-	}, 1000);
+	}, 200);
 }
 function resetLoader(){
 	document.getElementById('loader').innerHTML =  null;
@@ -35,10 +35,9 @@ function makerequest(){
 
 	$.get("https://api.flickr.com/services/rest/?method=flickr.people.findByUsername&api_key=6c831824ff9e6778397aa5d3b9ad6cda&format=json&username="+userinput+"&nojsoncallback=1").done(function(response){
 		// $("#container").css('background-image', 'url('+$loaderurl+')');
-
-		$("#wallpaper").css('background-color', 'white');
-		$("#wallpaper").css('transition', 'background 200ms ease-in 3s');
-
+		//
+		// $("#wallpaper").css('background-color', 'white');
+		// $("#wallpaper").css('transition', 'background 200ms ease-in 3s');
 		buildstring(response.user.nsid);
 	});
 }
