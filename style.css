@@ -8,6 +8,8 @@ html {
 	height:100%;
 	width:100%;
 	margin:0;
+	margin-left:auto;
+	margin-right:auto;
 	position:absolute;
 	background-color:rgba(123,123,123,.5);
 
@@ -38,7 +40,9 @@ input:required {
 }
 
 .dataformcontainer{
-	padding-top:20%;
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 	margin-left:auto;
 	margin-right:auto;
 	width:40%;
@@ -71,6 +75,9 @@ h3{
 
 .spinner {
   margin: 100px auto 0;
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
   width: 70px;
   text-align: center;
 }
