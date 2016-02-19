@@ -6,13 +6,14 @@
 // FataliGallery
 function initapp(){
 // alert('got here');
-	var presets = ["_rebekka", "olivia bee", "rosiehardy","FataliGallery","Marsel Van Oosten"];
+	var presets = ["_rebekka", "olivia bee", "rosiehardy","FataliGallery","Marsel Van Oosten", "BestOfRallyLive"];
 	// alert(cars.length);
 	var randomindex = Math.floor(Math.random() * presets.length);
 	// alert(presets[randomindex]);
 	var user = presets[randomindex];
 	// alert(user);
 	$("#username").attr('placeholder', user);
+
 
 	makerequest(user);
 }
