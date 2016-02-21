@@ -6,7 +6,7 @@
 // FataliGallery
 function initapp(){
 // alert('got here');
-	var presets = ["_rebekka", "olivia bee", "rosiehardy","FataliGallery","Marsel Van Oosten", "BestOfRallyLive"];
+	var presets = ["_rebekka", "olivia bee", "rosiehardy","Marsel Van Oosten", "BestOfRallyLive"];
 	// alert(cars.length);
 	var randomindex = Math.floor(Math.random() * presets.length);
 	// alert(presets[randomindex]);
